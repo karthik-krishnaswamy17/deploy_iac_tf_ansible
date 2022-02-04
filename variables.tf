@@ -12,8 +12,8 @@ variable "region-worker" {
   default = "us-west-2"
 
 }
-variable "ami-path"{
-  type = string
+variable "ami-path" {
+  type    = string
   default = "/aws/service/ami-amazon-linux-latest/amzn2-ami-kernel-5.10-hvm-x86_64-gp2"
 }
 
