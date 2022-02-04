@@ -8,3 +8,7 @@ output "Jenkins-worker-Public-IP" {
     instance.id => instance.public_ip
   }
 }
+
+output "LB-DNS-NAME" {
+  value = aws_lb.application-lb.dns_name
+}

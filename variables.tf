@@ -30,3 +30,8 @@ variable "external_ip" {
   default = ["0.0.0.0/0"]
 
 }
+
+variable "webserver-port" {
+  type    = number
+  default = 80
+}

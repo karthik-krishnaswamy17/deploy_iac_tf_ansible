@@ -51,13 +51,13 @@ resource "aws_subnet" "master_subnet_1" {
   availability_zone = element(data.aws_availability_zones.azs.names, 0)
 
 }
-# resource "aws_subnet" "subnet_2" {
-#   vpc_id            = aws_vpc.vpc_master.id
-#   provider          = aws.region-master
-#   cidr_block        = "10.0.2.0/24"
-#   availability_zone = element(data.aws_availability_zones.azs.names, 1)
+resource "aws_subnet" "master_subnet_2" {
+  vpc_id            = aws_vpc.vpc_master.id
+  provider          = aws.region-master
+  cidr_block        = "10.0.2.0/24"
+  availability_zone = element(data.aws_availability_zones.azs.names, 1)
 
-# }
+}
 
 
 data "aws_availability_zones" "azs-worker" {
